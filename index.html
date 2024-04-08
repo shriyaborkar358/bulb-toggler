@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulb-Toggler</title>
+    <style>
+         body{
+            background-image: linear-gradient( 109.6deg,  rgba(215,109,119,1) 11.3%, rgba(255,175,123,1) 100.2% );
+            background-color: #200122 #6f0000;
+            height: 90vh;
+        }
+
+        .heading{
+            font-size: 40px;
+            text-align: center;
+            padding: 25px;
+            color: maroon;
+        }
+
+        .container{
+            height: 490px;
+            width: 450px;
+            background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+            border-radius: 25px;
+            margin: 100px auto;
+            box-shadow: 0 0 9px 5px #3b3b5b;
+        }
+
+        .bulb-img{
+            height: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-container{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+
+        .btn{
+            font-size: 20px;
+            padding: 6px 25px;
+            background-image: linear-gradient(to top, #c62a34 0%, #211867 100%);
+            border-radius: 15px;
+            border: none;
+            width: 100px;
+            color: rgb(223, 215, 205);
+            box-shadow: 0 0 10px gray;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Bulb-Toggler</h1>
+        <img src="bulb-off.png" class="bulb-img" id="bulb-img" />
+        <div class="btn-container">
+            <button class="btn" onclick="bulbon()">ON</button>
+            <button class="btn" onclick="bulboff()">OFF</button>
+        </div>
+    </div>
+    
+</body>
+</html>
